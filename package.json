@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon cli.js",
     "test": "npm run test"
   },
   "bin": {
-    "cachebox-cli": "./index.js"
+    "cachebox-cli": "./cli.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "dependencies": {
     "execa": "^1.0.0",
     "listr": "^0.14.2",
+    "meow": "^5.0.0",
     "signale": "^1.3.0"
   },
   "devDependencies": {

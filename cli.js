@@ -10,6 +10,11 @@ const cli = meow(help, {
       type: "boolean",
       alias: "v",
       default: "0.0.0"
+    },
+    help: {
+      type: "boolean",
+      alias: "h",
+      default: help
     }
   }
 });

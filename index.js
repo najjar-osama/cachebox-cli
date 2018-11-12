@@ -8,12 +8,7 @@ const cliController = (input, flags, showHelp) => {
   if (flags.version) {
     console.log(version);
   }
-  if (
-    Object.keys(flags).length === 2 &&
-    Object.keys(flags)[0] === "version" &&
-    !flags.version &&
-    input.length === 0
-  ) {
+  if (flags.help) {
     showHelp();
   }
 };

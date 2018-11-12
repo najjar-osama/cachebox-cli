@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 const meow = require("meow");
-const help = require("./lib/help");
+const helpString = require("./lib/commands/help").getHelpString();
 const cliController = require(".");
-const cli = meow(help, {
+
+const cli = meow(helpString, {
   autoHelp: false,
   autoVersion: false,
   flags: {
@@ -14,9 +15,9 @@ const cli = meow(help, {
     help: {
       type: "boolean",
       alias: "h",
-      default: help
+      default: helpString
     }
   }
 });
 
-cliController(cli.input, cli.flags, cli.showHelp);
+cliController(cli.input, cli.flags);

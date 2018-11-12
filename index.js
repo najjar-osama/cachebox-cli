@@ -1,15 +1,13 @@
-const version = require("./lib/version");
+const version = require("./lib/commands/version");
+const help = require("./lib/commands/help");
 
 // cli-controller will map the given input & flages with the right action
 const cliController = (input, flags, showHelp) => {
-  if (flags.help) {
-    showHelp();
-  }
   if (flags.version) {
-    console.log(version);
+    version.showVersion();
   }
   if (flags.help) {
-    showHelp();
+    help.showHelp();
   }
 };
 

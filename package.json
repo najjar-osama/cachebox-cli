@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/najjar-osama/cachebox-cli#readme",
   "dependencies": {
+    "cfonts": "^2.2.3",
     "chalk": "^2.4.1",
     "execa": "^1.0.0",
     "listr": "^0.14.2",

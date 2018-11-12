@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 const meow = require("meow");
 const helpString = require("./lib/commands/help").getHelpString();
-const cliController = require(".");
+const versionString = require("./lib/commands/version").getVersionString();
+const cliController = require("./cliController");
 
 const cli = meow(helpString, {
   autoHelp: false,
@@ -10,7 +11,7 @@ const cli = meow(helpString, {
     version: {
       type: "boolean",
       alias: "v",
-      default: "0.0.0"
+      default: versionString
     },
     help: {
       type: "boolean",

@@ -1,14 +1,14 @@
 {
-  "name": "cachebox-cli",
+  "name": "mx-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cli.js",
   "scripts": {
     "dev": "nodemon cli.js",
     "test": "npm run test"
   },
   "bin": {
-    "cachebox-cli": "./cli.js"
+    "mx-cli": "./cli.js"
   },
   "repository": {
     "type": "git",
